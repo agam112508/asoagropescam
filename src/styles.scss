@@ -1,1 +1,53 @@
-/* You can add global styles to this file, and also import other style files */
+
+:root {
+  /* Tipografía y configuración general */
+  font-family: 'DM Sans', sans-serif;
+  color: #24352b;
+  background: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+
+  /* Paleta corporativa ASOAGROPESCAM */
+  --forest: #234c3a;
+  --forest-dark: #173729;
+  --leaf: #71966a;
+  --cream: #f5f1e7;
+  --ochre: #d9a441;
+  --ink: #24352b;
+  --muted: #667268;
+}
+
+/* Configuración general */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+#inicio,
+#nosotros,
+#lineas,
+#proyectos,
+#contacto,
+#identidad {
+  scroll-margin-top: 90px;
+}

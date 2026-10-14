@@ -1,0 +1,41 @@
+```html
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Formularios ASOAGROPESCAM</title>
+  </head>
+
+  <body>
+    <form
+      name="contacto-asoagropescam"
+      method="POST"
+      data-netlify="true"
+      netlify-honeypot="bot-field"
+      hidden
+    >
+      <input
+        type="hidden"
+        name="form-name"
+        value="contacto-asoagropescam"
+      />
+
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="tel" name="phone" />
+
+      <select name="subject">
+        <option value="Informacion general">Información general</option>
+        <option value="Proyectos">Proyectos</option>
+        <option value="Alianzas">Alianzas</option>
+        <option value="Campaña navideña">Campaña navideña</option>
+        <option value="Otro">Otro</option>
+      </select>
+
+      <textarea name="message"></textarea>
+      <input type="checkbox" name="privacy" value="Autorizo" />
+      <input type="text" name="bot-field" />
+    </form>
+  </body>
+</html>
+```

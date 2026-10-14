@@ -1,0 +1,25 @@
+
+:host {
+  --forest: #234c3a;
+  --forest-dark: #173729;
+  --leaf: #71966a;
+  --cream: #f5f1e7;
+  --ochre: #d9a441;
+  --ink: #24352b;
+  --muted: #667268;
+
+  display: block;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.site-shell {
+  width: 100%;
+  overflow: hidden;
+  color: var(--ink);
+  background: #fff;
+}

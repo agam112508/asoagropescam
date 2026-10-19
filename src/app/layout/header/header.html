@@ -1,20 +1,38 @@
+
 <header class="navbar">
-
   <a class="brand" href="#inicio" aria-label="ASOAGROPESCAM - Inicio">
-
-    <img class="brand-logo" src="/images/brand/Logo-asoagropescam.png" alt="Logo de ASOAGROPESCAM" />
-
+    <img
+      class="brand-logo"
+      src="/images/brand/Logo-asoagropescam.png"
+      alt="Logo de ASOAGROPESCAM"
+    />
     <span>ASOAGROPESCAM</span>
   </a>
 
+  <button
+    class="menu-toggle"
+    type="button"
+    aria-label="Abrir menú de navegación"
+    [attr.aria-expanded]="menuAbierto"
+    (click)="menuAbierto = !menuAbierto"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 
-  <nav class="nav-links" aria-label="Navegación principal">
-    <a href="#inicio">Inicio</a>
-    <a href="#nosotros">Nosotros</a>
-    <a href="#identidad">Nuestra identidad</a>
-    <a href="#lineas">Qué hacemos</a>
-    <a href="#proyectos">Proyectos</a>
-    <a class="nav-contact" href="#contacto">Contáctanos ↗</a>
+  <nav
+    class="nav-links"
+    [class.nav-open]="menuAbierto"
+    aria-label="Navegación principal"
+  >
+    <a href="#inicio" (click)="cerrarMenu()">Inicio</a>
+    <a href="#nosotros" (click)="cerrarMenu()">Nosotros</a>
+    <a href="#identidad" (click)="cerrarMenu()">Nuestra identidad</a>
+    <a href="#lineas" (click)="cerrarMenu()">Qué hacemos</a>
+    <a href="#proyectos" (click)="cerrarMenu()">Proyectos</a>
+    <a class="nav-contact" href="#contacto" (click)="cerrarMenu()">
+      Contáctanos ↗
+    </a>
   </nav>
-
 </header>
